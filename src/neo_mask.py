@@ -1,4 +1,3 @@
-import time
 import board
 import neopixel
 import texture_parser
@@ -23,10 +22,12 @@ for i, color in enumerate(colors):
     pixels[i] = color
 pixels.show()
 
-# Keep the program running so the data line stays driven. Ctrl+C turns the strip off.
+# Keep the program running so the data line stays driven.
+# Press Enter (or Ctrl+C) to turn the strip off and exit.
 try:
-    while True:
-        time.sleep(1)
+    input("Pattern is showing. Press Enter to turn off.\n")
 except KeyboardInterrupt:
-    pixels.fill((0, 0, 0))
-    pixels.show()
+    pass
+
+pixels.fill((0, 0, 0))
+pixels.show()
