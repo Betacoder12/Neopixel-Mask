@@ -5,7 +5,7 @@ set -e
 
 echo "Installing system packages..."
 sudo apt update
-sudo apt install -y git python3-venv python3-pip build-essential python3-dev
+sudo apt install -y git python3-venv python3-pip build-essential python3-dev swig liblgpio-dev
 
 echo "Creating virtual environment in ./venv ..."
 python3 -m venv venv
