@@ -41,6 +41,9 @@ class TextureParser:
 if __name__ == "__main__":
     parser = TextureParser()
     strip, brightness = parser.parse()
+    # 1 = any lit color, 0 = black. With an all-lit texture, a 9x10 picture
+    # should print 01111111111 repeated 9 times (99 pixels).
+    layout = "".join("0" if tuple(c) == (0, 0, 0) else "1" for c in strip)
     print("Pixels:", len(strip))
-    print("Strip:", strip)
+    print("Layout:", layout)
     print("Brightness:", brightness)
