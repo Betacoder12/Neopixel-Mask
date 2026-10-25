@@ -27,10 +27,12 @@ class TextureParser:
         # colors come out in the order a snaking strip is physically wired.
         # extend() adds the row's colors one by one, giving one flat list of
         # pixels (append() would add each whole row as a single item).
+        # Every row is preceded by one unlit spacer LED, [0, 0, 0].
         for y in range(len(texture) - 1, -1, -1):
             row = [palette[str(x)] for x in texture[y]]
             if (len(texture) - y) % 2 == 1:
                 row.reverse()
+            strip.append([0, 0, 0])
             strip.extend(row)
 
         return strip, brightness
@@ -42,4 +44,3 @@ if __name__ == "__main__":
     print("Pixels:", len(strip))
     print("Strip:", strip)
     print("Brightness:", brightness)
-    
