@@ -3,7 +3,7 @@ import neopixel
 import texture_parser
 
 NUM_LEDS = 99
-MAX_BRIGHTNESS = 0.3   # keeps 99 LEDs around 1.8A worst case on a 3A port
+MAX_BRIGHTNESS = 0.2
 
 parser = texture_parser.TextureParser()
 strip, brightness = parser.parse()

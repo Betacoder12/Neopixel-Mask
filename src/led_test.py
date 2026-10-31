@@ -2,8 +2,8 @@ import time
 import board
 import neopixel
 
-NUM_LEDS = 8          # start with 8 for the first test, then change to 96
-BRIGHTNESS = 0.3      # keeps 96 LEDs around 1.7A worst case
+NUM_LEDS = 8
+BRIGHTNESS = 0.3
 
 pixels = neopixel.NeoPixel(board.D18, NUM_LEDS, brightness=BRIGHTNESS, auto_write=False)
 
