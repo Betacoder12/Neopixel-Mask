@@ -25,7 +25,7 @@ pixels.show()
 # Keep the program running so the data line stays driven.
 # Press Enter (or Ctrl+C) to turn the strip off and exit.
 try:
-    input("Pattern is showing. Press Enter to turn off.\n")
+    input("Pattern is showing. Ctrl+C to turn off.\n")
 except KeyboardInterrupt:
     pass
 
