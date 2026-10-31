@@ -1,5 +1,5 @@
 {
-    "brightness": 0.3,
+    "brightness": 0.1,
     "pallette": {
         ".": [0,0,0],
         "Y": [255,240,0],
