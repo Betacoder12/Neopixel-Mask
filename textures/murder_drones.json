@@ -6,14 +6,14 @@
         "W": [230,230,230]
     },
     "texture": [
-        ".YYY..YYY.",
+        "YYYY..YYYY",
         "....YY....",
-        ".YYY..YYY.",
-        "WWWWWWWWWW",
-        ".WWW..WWW.",
-        "..W....W..",
+        "YYYY..YYYY",
         "..........",
-        "...W..W...",
+        "WWWWWWWWWW",
+        ".WW....WW.",
+        "..........",
+        "..W....W..",
         "WWWWWWWWWW"
     ]
 }
