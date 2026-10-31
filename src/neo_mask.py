@@ -22,12 +22,3 @@ for i, color in enumerate(colors):
     pixels[i] = color
 pixels.show()
 
-# Keep the program running so the data line stays driven.
-# Press Enter (or Ctrl+C) to turn the strip off and exit.
-try:
-    input("Pattern is showing. Ctrl+C to turn off.\n")
-except KeyboardInterrupt:
-    pass
-
-pixels.fill((0, 0, 0))
-pixels.show()
