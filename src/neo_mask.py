@@ -27,7 +27,5 @@ pixels.show()
 try:
     input("Pattern is showing. Press Enter to turn off.\n")
 except KeyboardInterrupt:
-    pass
-
-pixels.fill((0, 0, 0))
-pixels.show()
+    pixels.fill((0, 0, 0))
+    pixels.show()
